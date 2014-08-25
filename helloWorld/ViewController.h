@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *uiTitle;
+@property (weak, nonatomic) IBOutlet UITextField *inputBox;
+@property (weak, nonatomic) IBOutlet UITextView *outBox;
+
+//@property (weak, nonatomic) IBOutlet UITableView *outTableView;
+
 
 @end

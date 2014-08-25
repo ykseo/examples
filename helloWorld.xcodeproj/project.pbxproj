@@ -53,6 +53,7 @@
 		59C62AD3199F90D000627423 /* helloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "helloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		59C62AD5199F90D000627423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59C62AD7199F90D000627423 /* helloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloWorldTests.m; sourceTree = "<group>"; };
+		59E25E1F19A0B81400C708AD /* bundle1.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = bundle1.o; path = usr/lib/bundle1.o; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		59C62AAB199F90D000627423 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59E25E1F19A0B81400C708AD /* bundle1.o */,
 				59C62AAC199F90D000627423 /* Foundation.framework */,
 				59C62AAE199F90D000627423 /* CoreGraphics.framework */,
 				59C62AB0199F90D000627423 /* UIKit.framework */,
@@ -374,11 +376,16 @@
 		59C62ADC199F90D000627423 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorld/helloWorld-Prefix.pch";
 				INFOPLIST_FILE = "helloWorld/helloWorld-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -387,11 +394,16 @@
 		59C62ADD199F90D000627423 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					armv7,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorld/helloWorld-Prefix.pch";
 				INFOPLIST_FILE = "helloWorld/helloWorld-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +468,7 @@
 				59C62ADD199F90D000627423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59C62ADE199F90D000627423 /* Build configuration list for PBXNativeTarget "helloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +477,7 @@
 				59C62AE0199F90D000627423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
