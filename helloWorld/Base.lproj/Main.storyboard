@@ -48,18 +48,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xLt-J0-5jI">
-                                <rect key="frame" x="38" y="264" width="234" height="284"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="inputBox" destination="9jL-8Q-kmP" id="QgD-S7-cOk"/>
                         <outlet property="outBox" destination="pph-Va-zrd" id="ZPP-qs-bXs"/>
-                        <outlet property="outTableView" destination="xLt-J0-5jI" id="u6d-ad-fUz"/>
                         <outlet property="uiTitle" destination="oL2-lU-qPc" id="ncr-VU-nNA"/>
                     </connections>
                 </viewController>
